@@ -99,7 +99,7 @@ jobs:
   Production-Job:
     runs-on: ubuntu-latest
     environment: production
-    needs: [ RG-Job ]
+    needs: [ Dev-Job ]
     env:
       AZURE-WEBAPP-NAME: johan-techorama-mywebapp-prod
     steps:
